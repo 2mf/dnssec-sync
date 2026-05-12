@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dnssec-sync"
+version = "1.0.0"
+description = "Sync DNSSEC data between ISPConfig and INWX"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "requests",
+  "inwx-domrobot",
+  "zeep",
+  "python-dotenv",
+]
+
+[project.scripts]
+dnssec-sync = "dnssec_sync.cli:main"
+
+[tool.setuptools]
+packages = ["dnssec_sync"]

@@ -1,0 +1,4 @@
+requests
+inwx-domrobot
+zeep
+python-dotenv
